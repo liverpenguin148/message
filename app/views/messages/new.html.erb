@@ -1,8 +1,5 @@
 <h1>メッセージ新規作成ページ</h1>
 
-<!--form_with ~ end までがフォーム-->
-<!--model: @message Controllerのnewアクションで用意した@message を使用してフォームを作成-->
-
-<!--formのパーシャルを呼ぶ。インスタンス変数（@message）をmessageという変数で渡している--
 <%= render 'form', message: @message %>
+
 <%= link_to '一覧に戻る', messages_path %>

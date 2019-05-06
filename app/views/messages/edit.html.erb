@@ -1,7 +1,5 @@
-<h1><%= @message.id %> のメッセージ編集ページ</h1>
+<h1>id: <%= @message.id %> のメッセージ編集ページ</h1>
 
-<!--form_with ~ end までがフォーム-->
-<!--model: @message Controllerのnewアクションで用意した@message を使用してフォームを作成-->
 <%= render 'form', message: @message %>
 
 <%= link_to '一覧に戻る', messages_path %>
